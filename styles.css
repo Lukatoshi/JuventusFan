@@ -1,3 +1,7 @@
+root:{
+    --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -6,29 +10,29 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
-  }
+}
 
-  #icones{
+#icones {
 
     height: 29px;
     padding: 5px;
     margin-right: 5px;
 
 
-  }
+}
 
-  .email{
+.email {
     text-decoration: none;
-    color: white!important;
-  }
+    color: white !important;
+}
 
-  .toggle-content {
+.toggle-content {
 
     display: block;
     position: absolute;
@@ -39,26 +43,26 @@
 }
 
 
-body{
+body {
     margin: 0;
-    padding:0;
-    color:#232323;
+    padding: 0;
+    color: #232323;
     font-family: sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
-.wrapper{
-    width:100%;
+.wrapper {
+    width: 100%;
     margin: 0 auto;
 }
 
-main{
+main {
     display: block;
-background-color: #FFF;
+    background-color: #FFF;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
@@ -66,66 +70,88 @@ background-color: #FFF;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 900;
     color: #000;
 }
 
-section.module p{
+section.module p {
     margin-bottom: 40px;
 
-}section.module:last-child{
+}
+
+section.module:last-child {
     margin-bottom: 0;
 }
 
-section.module h2{
-    margin-bottom: 40px;
+section.module h2 {
+    /* margin-bottom: 40px; */
     font-size: 30px;
 }
 
-section.module.content{
+section.module.content {
+
     padding: 80px 0;
-    background: #000000;
     height: 2000px;
 }
 
-section.module.parallax{
+section.module.parallax {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh !important;
     width: 100%;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-}
-section.module.parallax:after{
-    content:'';
-    height: 100%;
-    width: 100%;
-    position:absolute;
-    z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-section.module.parallax-1{
-    background-image:url(https://cdn.tuttosport.com/images/2020/10/04/201309502-33cfdc78-dd90-4e48-beb3-2d0987c0908f.jpg);
+section.module.parallax:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 120%);
+}
+
+section.module.parallax-1 {
+    background-image: url(https://cdn.tuttosport.com/images/2020/10/04/201309502-33cfdc78-dd90-4e48-beb3-2d0987c0908f.jpg);
     filter: brightness(90%) contrast(130%) sepia(30%) saturate(120%) hue-rotate(-20deg);
 }
 
- section.module.parallax-2{
+section.module.parallax-2 {
     background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb715a2c7c34e7c58/65081d5510c9ec212e761d9c/chiesa_e_vlahovic.jpg?auto=webp&format=pjpg&width=1080&quality=60);
     filter: brightness(70%) contrast(130%) sepia(30%) saturate(120%) hue-rotate(-20deg);
 
-} 
+}
+section.module.parallax-module {
+    width: 100%;
+height: auto;
+    background-image: url(/resources/—Pngtree—aerial\ shooting\ of\ football\ field_1683387.jpg)  ;
+    filter: brightness(90%) contrast(150%) sepia(20%) saturate(120%) hue-rotate(-20deg) ;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+}
 
-section.module.parallax h1, h2{
+
+section.module.parallax h1,
+h2 {
     color: #FFF;
     text-align: center;
     font-size: 78px;
@@ -136,68 +162,62 @@ section.module.parallax h1, h2{
 
 .container2 {
     display: grid;
-    grid-template-columns:0.5fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     width: 100%;
     justify-content: space-between;
-    margin: 0 auto;
-    gap: 20px; /* Adicionado espaçamento entre as colunas */
+    margin: 2rem auto;
+    gap: 3rem;
 
     @media (max-width: 768px) {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        grid-template-columns: 1fr;/
     }
 }
 
-.container2 p {
-    text-align: center;
-    margin-bottom: 0;
-    margin-inline: 0; 
+
+.side-logo1 {
+    width: 100% !important;
+    height: auto;
+    filter: brightness(90%) contrast(130%) sepia(30%) saturate(120%) hue-rotate(-20deg);
+
 }
 
-.side-logo {
-    
-    width: 250px!important;
-    padding: 20px;
-    height:250px ;
-     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 1) 100%);
-     filter: brightness(90%) contrast(130%) sepia(30%) saturate(120%) hue-rotate(-20deg);
-     box-shadow: inset 20px 1px 1px 1px rgba(0, 0, 0, 1); 
-
-
-    pointer-events: none;
-    border-radius: 100%;;
-}
-
-.side-logo img {
-    max-width: 100%;
-    max-height: auto; 
+.side-logo1 img {
+    max-width: 80%;
+    max-height: auto;
     object-fit: cover;
     display: block;
     opacity: 1;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-left: 7rem;
 }
 
 .item {
     display: block;
-    padding: 0; 
-    background-color: none; 
+    padding: 0;
+    height: 70%;
+    background-color: none;
     justify-content: center;
     align-items: center;
-    font-size: 1em; 
+    font-size: 1em;
     font-weight: bold;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
 }
-.item p{
-    text-align: justify!important;
+
+.item p {
+    width: 100%;
+    margin-bottom: 0 !important;
+    text-align: justify !important;
     color: #FFF;
     letter-spacing: 0.1rem;
-    
-    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
     font-family: 'Quicksand', sans-serif;
 }
 
-.item p::first-letter{
+.item p::first-letter {
     font-size: xx-large;
 }
+
 .container3 {
     width: 100%;
     max-width: 1200px;
@@ -206,43 +226,66 @@ section.module.parallax h1, h2{
 
 @media (max-width: 768px) {
     .item {
-        font-size: 0.8em; 
+        font-size: 0.8em;
     }
 }
 
-.navbar{
+.navbar {
     background-color: #1b1b1b;
-    
+
 }
-.h2-historia{
+
+.h2-historia {
     color: #FFF;
     text-align: center;
-    font-size: 6rem!important;
-    margin:  4rem 0 7rem 0!important;
+    font-size: 6rem !important;
+    margin: 4rem 0 7rem 0 !important;
     z-index: 50;
     text-transform: uppercase;
-  
-    }
 
-    
-.tab:after{
-    opacity: 0.3;
+}
+
+
+.tab1:after {
+    opacity: 1;
     content: '';
     width: 0;
-    height: 30%;
+    height: 6400px;
     position: absolute;
-    background-color: white;
-    border: 0.1px solid white;
-    margin-left: 7rem ;
-    
+    margin-left: 26rem;
+    border: 10px solid white;
 }
 
-.icone-border{
+.tab2:after {
+    opacity: 1;
+    content: '';
+    width: 0;
+    height: 6400px;
+    position: absolute;
+    margin-left: 44.8rem;
+    border: 4px solid white;
+}
+
+.tab3:after {
+    opacity: 1;
+    content: '';
+    width: 0;
+    height: 6400px;
+    position: absolute;
+    margin-left: 61.7rem;
+    border: 10px solid white;
+}
+
+.control-tab {
+    opacity: 0.2;
+}
+
+.icone-border {
     margin-left: 5.6rem;
-    
+
 }
 
-.icone-border span{
+.icone-border span {
     opacity: 0.3;
     color: white;
     height: 100%;
@@ -251,9 +294,157 @@ section.module.parallax h1, h2{
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 100,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 24
+}
+.card-container{
+    height: 32rem;
+}
+
+.card1 {
+    height: 20rem;
+    width: 15rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 1500px;
+    margin: 0 50px;
+    z-index: 1;
+   
+}
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); /* Adicionado para ilustrar o elemento */
+
+  }
+  
+
+
+.wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 80%;
+    z-index: -2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Adicionado para ilustrar o elemento */
+
+    
+
+}
+.wrapper img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    object-fit:contain;
+
+}
+
+.card1:hover .wrapper {
+    transform: perspective(2500px) translateY(-20%) rotateX(20deg) translateZ(100px);
+    box-shadow: 2px 35px 32px -8px rgba(239, 239, 239, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    opacity: 0.3;
+   
+  
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+
+}
+
+.wrapper::before {
+    top: 0;
+    height: 100%;
+    
+    
+}
+
+.wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(to bottom,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.card1:hover .wrapper::before,
+.wrapper::after {
+    z-index: 1;
+    opacity: 1;
+}
+
+.card1:hover .wrapper::after {
+    height: 120px;
+    border-radius: 10px;
+
+}
+
+.title {
+    width: 170%;
+    transition: transform 0.5s;
+  
+    
+}
+
+.card1:hover .title {
+    transform: translate3d(-20%, -150px, 300px);
+    transition: 0.5s;
+    opacity: 1;
+
+    
+}
+
+
+.character {
+    width: 80%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.character-title {
+    width: 80%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    
+   
+}
+.card1:hover .character-title {
+    transform: translate3d(0%, -60px, 600px);
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 1000!important;
+  
+}
+
+.card1:hover .character {
+    opacity: 1;
+    transform: translate3d(-8%, -29%, 500px);
+    
+    
+}
+
+.card-container{
+
+    display: flex;
+    justify-content: center;
 }
