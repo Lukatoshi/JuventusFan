@@ -136,7 +136,7 @@ section.module.parallax-2 {
 section.module.parallax-module {
     width: 100%;
 height: auto;
-    background-image: url(/resources/campo.jpg)  ;
+    background-image: url(./resources/campo.jpg)  ;
     filter: brightness(90%) contrast(150%) sepia(20%) saturate(120%) hue-rotate(-20deg) ;
     object-fit: fill;
     background-repeat: no-repeat;
