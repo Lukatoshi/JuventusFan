@@ -135,8 +135,8 @@ section.module.parallax-2 {
 }
 section.module.parallax-module {
     width: 100%;
-height: auto;
-    background-image: url(/resources/—Pngtree—aerial\ shooting\ of\ football\ field_1683387.jpg)  ;
+    height: auto;
+    background-image: url(/resources/—Pngtree—aerial\ shooting\ of\ football\ field_1683387.jpg.jpg)  ;
     filter: brightness(90%) contrast(150%) sepia(20%) saturate(120%) hue-rotate(-20deg) ;
     object-fit: fill;
     background-repeat: no-repeat;
